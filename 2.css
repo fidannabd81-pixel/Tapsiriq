@@ -1,0 +1,75 @@
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.left {
+  width: 50%;
+}
+
+.left h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.left p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.right {
+  width: 500px;
+  height: 300px;
+  background: #C4DEFD;
+}
+
+.button {
+  padding: 15px 30px;
+  background: #4F9CF9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.work .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.work img {
+  width: 400px;
+}
+
+.right-text {
+  width: 500px;
+}
+
+.right-text h1 {
+  font-size: 48px;
+}
+
+.right-text p {
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
