@@ -1,67 +1,93 @@
-body {
+body { 
+  margin: 0;
+  height: 900px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-}
+  background-color: bisque;
+  justify-content: center;
 
-.box {
-  width: 400px;
-  height: 400px;
+}
+.container{
   position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: azure;
+
 }
-
-.center {
-  width: 60px;
-  height: 60px;
-  background: lightblue;
-
+.box{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+
+}
+.pink{
+  background-color: pink;
+  top: 0;
+left: 0;
+animation: Pink-box 4s infinite linear
+
+}
+.blue{
+  background-color: blue;
+  top: 0;
+  right: 0;
+  
+
+  animation: blue-box 4s infinite linear
+}
+.brown {
+  background-color: brown;
+   left: 0;
+  bottom: 0;
+
+  animation: brown-box 4s infinite linear
+
+
+}
+.yellow{
+  background-color: yellow;
+  bottom: 0;
+  right:0;
+
+  animation: yellow-box 4s infinite linear
+}
+@keyframes Pink-box {
+  0%{transform: translate(0,0);}
+  25%{transform: translate(400px,0);}
+  50%{transform: translate(400px,400px);}
+  75%{transform: translate(0,400px);}
+  100%{transform:translate(0,0);}
+
+
+  
+}
+@keyframes blue-box{
+   0%{transform: translate(0,0);}
+  25%{transform: translate(0,400p);}
+  50%{transform: translate(-400px,400px);}
+  75%{transform: translate(-400px,0);}
+  100%{ransform:translate(0,0)}
+
+}
+@keyframes brown-box{
+   0%{transform: translate(0,0);}
+  25%{transform: translate(0,-400px);}
+  50%{transform: translate(400px,-400px);}
+  75%{transform: translate(400px,0);}
+  100%{ransform:translate(0,0)}
+
 }
 
-
-.circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
+  
+@keyframes yellow-box{
+  
+   0%{transform: translate(0,0);}
+  25%{transform: translate(400px,0);}
+  50%{transform: translate(-400px,400px);}
+  75%{transform: translate(0 -400px);}
+  100%{ransform:translate(0,0)}
 }
+  
 
-.blue { background: blue; }
-.green { background: green; }
-.yellow { background: orange; }
-.orange { background: darkorange; }
-.red { background: red; }
+  
 
-.c1 { top: 120px; left: 90px; }
-.c2 { top: 80px; left: 180px; }
-.c3 { top: 150px; right: 80px; }
-.c4 { bottom: 90px; left: 160px; }
-
-.o1 { top: 20px; left: 80px; }
-.o2 { top: 40px; right: 40px; }
-.o3 { bottom: 40px; right: 20px; }
-.o4 { bottom: 20px; left: 60px; }
-.o5 { top: 160px; left: -10px; }
-.orbit {
-  position: absolute;
-  border: 2px dashed #ccc;
-  border-radius: 50%;
-}
-
-.orbit1 {
-  width: 250px;
-  height: 250px;
-  top: 75px;
-  left: 75px;
-}
-
-.orbit2 {
-  width: 380px;
-  height: 380px;
-  top: 10px;
-  left: 10px;
-}
