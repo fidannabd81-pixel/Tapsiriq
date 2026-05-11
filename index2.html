@@ -2,55 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project</title>
-  <link rel="stylesheet" href="2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <title>Fashion</title>
 </head>
-<body>
+<body class="bg-gray-100">
 
-<section class="hero">
-  <div class="container">
+  <section class="w-full p-10">
 
-
-    <div class="left">
-      <h1>Project <br> Management</h1>
-
-      <p>
-        Images, videos, PDFs and audio files are supported.
-        Create math expressions and diagrams directly from the app.
-        Take photos with the mobile app and save them to a note.
-      </p>
-
-      <button class="button">Get Started</button>
-    </div>
-
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center">
 
     
+      <div class="md:w-1/2">
+
+        <h1 class="text-5xl font-bold uppercase mb-6">
+          Find Clothes <br>
+          That Match <br>
+          Your Style
+        </h1>
+
+        <p class="text-gray-500 mb-6">
+          Browse our clothes and find the best style
+          for yourself and your personality.
+        </p>
+
+        <button class="bg-black text-white px-10 py-3 rounded-full mb-10">
+          Shop Now
+        </button>
+
+        <div class="flex gap-8 flex-wrap">
+
+          <div>
+            <h2 class="text-3xl font-bold">200+</h2>
+            <p class="text-sm text-gray-500">Brands</p>
+          </div>
+
+          <div>
+            <h2 class="text-3xl font-bold">2000+</h2>
+            <p class="text-sm text-gray-500">Products</p>
+          </div>
+
+          <div>
+            <h2 class="text-3xl font-bold">30000+</h2>
+            <p class="text-sm text-gray-500">Customers</p>
+          </div>
+
+        </div>
+
+      </div>
+
     
-    <div class="right"></div>
+      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
 
-  </div>
-</section>
+        <img src="saytin sekili.jpeg"
+             alt="fashion"
+             class="w-[400px] rounded-lg">
 
+      </div>
 
-
-<section class="work">
-  <div class="container">
-
-    <img src="image.jpg" alt="picture">
-
-    <div class="right-text">
-      <h1>Work together</h1>
-
-      <p>
-        With whitepace, share your notes with your colleagues and collaborate on them.
-        You can also publish a note to the internet and share the URL with others.
-      </p>
-
-      <button class="btn">Try it now</button>
     </div>
 
-  </div>
-</section>
+  </section>
 
 </body>
 </html>
